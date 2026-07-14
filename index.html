@@ -1,149 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Payment Successful! 🎉 AI Money Kit</title>
-<meta name="description" content="Thank you for your purchase! Get instant access to AI Money Kit Members Area.">
-<meta http-equiv="refresh" content="5;url=https://lwy907919-a11y.github.io/ai-money-kit-members/">
+<title>🎉 付款成功 - 立即开始你的 AI 副业</title>
+<meta http-equiv="refresh" content="8;url=https://lwy907919-a11y.github.io/ai-money-kit-members/?orderId=GUEST">
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; color: #1a1a1a; background: linear-gradient(135deg, #10b981 0%, #059669 100%); min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; }
-.container { max-width: 600px; background: white; padding: 50px 40px; border-radius: 16px; text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,0.2); }
-.checkmark { width: 80px; height: 80px; background: #10b981; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 50px; color: white; margin: 0 auto 24px; animation: pop 0.3s ease-out; }
+body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif; line-height: 1.6; color: #1a1a1a; background: linear-gradient(135deg, #10b981 0%, #059669 100%); min-height: 100vh; padding: 20px; }
+.container { max-width: 680px; margin: 0 auto; background: white; padding: 40px 32px; border-radius: 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.2); }
+.checkmark { width: 72px; height: 72px; background: #10b981; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 44px; color: white; margin: 0 auto 16px; animation: pop 0.5s ease-out; }
 @keyframes pop { from { transform: scale(0); } to { transform: scale(1); } }
-h1 { font-size: 2rem; margin-bottom: 12px; color: #065f46; }
-.subtitle { color: #666; margin-bottom: 30px; font-size: 1.05rem; }
-.next-steps { background: #f0fdf4; border: 2px solid #10b981; border-radius: 12px; padding: 24px; margin: 20px 0; text-align: left; }
-.next-steps h3 { color: #065f46; margin-bottom: 12px; font-size: 1.1rem; }
-.next-steps ol { margin-left: 20px; line-height: 1.8; color: #1a1a1a; }
-.access-btn { display: inline-block; background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; padding: 16px 40px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 1.1rem; margin: 16px 0; box-shadow: 0 4px 12px rgba(16,185,129,0.3); }
-.access-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(16,185,129,0.4); }
-.timer { color: #999; font-size: 0.9rem; margin-top: 16px; }
-.divider { border-top: 1px solid #e5e7eb; margin: 30px 0; }
-.help { color: #666; font-size: 0.9rem; margin-top: 20px; }
-.help a { color: #10b981; text-decoration: none; font-weight: 600; }
-.alert { background: #fef3c7; border: 1px solid #f59e0b; padding: 12px 16px; border-radius: 8px; color: #92400e; font-size: 0.9rem; margin: 16px 0; }
+h1 { font-size: 1.8rem; margin-bottom: 8px; color: #065f46; text-align: center; }
+.subtitle { color: #666; margin-bottom: 24px; font-size: 1.05rem; text-align: center; }
+.urgency { background: #fef3c7; border: 2px solid #f59e0b; border-radius: 10px; padding: 16px; margin-bottom: 24px; text-align: center; }
+.urgency h3 { color: #92400e; font-size: 1.05rem; margin-bottom: 6px; }
+.urgency p { color: #78350f; font-size: 0.9rem; }
+.unlock-box { background: linear-gradient(135deg, #f0fdf4 0%, #d1fae5 100%); border: 2px solid #10b981; border-radius: 12px; padding: 20px; margin: 16px 0; }
+.unlock-box h3 { color: #065f46; margin-bottom: 12px; font-size: 1.05rem; text-align: center; }
+.unlock-box .row { display: flex; align-items: center; padding: 4px 0; font-size: 0.95rem; }
+.unlock-box .row .check { color: #10b981; font-weight: 900; margin-right: 8px; font-size: 1.1rem; }
+.cta { display: inline-block; background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; padding: 18px 40px; border-radius: 12px; text-decoration: none; font-weight: 800; font-size: 1.2rem; margin: 16px 0; box-shadow: 0 6px 20px rgba(16,185,129,0.4); width: 100%; text-align: center; box-sizing: border-box; }
+.cta:hover { transform: translateY(-2px); }
+.tip { color: #999; font-size: 0.85rem; margin-top: 12px; text-align: center; }
+.first-actions { background: #fff5f8; border: 2px solid #ee0979; border-radius: 12px; padding: 20px; margin: 24px 0; }
+.first-actions h3 { color: #ee0979; margin-bottom: 12px; font-size: 1.1rem; text-align: center; }
+.first-actions ol { padding-left: 24px; color: #1a1a1a; line-height: 1.9; }
+.first-actions li { margin-bottom: 8px; }
+.first-actions strong { color: #ee0979; }
+.cta-secondary { display: inline-block; background: white; color: #1a1a1a; border: 2px solid #1a1a1a; padding: 12px 28px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 1rem; margin-top: 12px; }
+.support { background: #f0f9ff; border: 1px solid #0ea5e9; border-radius: 8px; padding: 14px; margin-top: 24px; font-size: 0.9rem; color: #075985; text-align: center; }
+.support strong { color: #075985; }
+.refund-note { background: #f0fdf4; border: 1px solid #10b981; border-radius: 8px; padding: 12px; margin-top: 16px; font-size: 0.85rem; color: #065f46; text-align: center; }
 </style>
 </head>
 <body>
 <div class="container">
   <div class="checkmark">✓</div>
-  <h1>🎉 Payment Successful!</h1>
-  <p class="subtitle">Thank you! Your AI Money Kit access is being prepared.</p>
+  <h1>🎉 付款成功!欢迎加入</h1>
+  <p class="subtitle">5 大 AI 工具已为你开放,接下来 30 天,我们陪你跑通第一单</p>
 
-  <div class="next-steps">
-    <h3>📦 Your next steps (right now):</h3>
+  <div class="urgency">
+    <h3>⚡ 现在 5 分钟内做这件事,你 30 天回本概率提升 3 倍</h3>
+    <p><strong>不要存网页,不要等明天</strong>。AI 副业最怕"等等再说"——30 天后还在月入 0 的人,99% 都是付款后存了书签再没打开。</p>
+  </div>
+
+  <div class="first-actions">
+    <h3>🎯 你接下来的 5 分钟(现在就做)</h3>
     <ol>
-      <li><strong>Click below to access Members Area</strong> (5 systems, all content)</li>
-      <li>Bookmark the page for later</li>
-      <li>Check your email for backup link + receipt</li>
-      <li>Join our private channel (optional)</li>
+      <li><strong>点下面绿色按钮</strong>进 Members Area(2 分钟)</li>
+      <li>选 1 个工具 → 填 2-3 个空 → 点"生成"(3 分钟)</li>
+      <li>复制生成结果 → <strong>发朋友圈</strong>(1 分钟,模板我已写好)</li>
     </ol>
+    <p style="margin-top: 12px; text-align: center; color: #666; font-size: 0.9rem;">完成 3 步 = 你已经超过 50% 的 AI 副业玩家(他们 30 天都没动过)</p>
   </div>
 
-  <a href="https://lwy907919-a11y.github.io/ai-money-kit-members/" class="access-btn">
-    🚀 Access Members Area Now →
+  <div class="unlock-box">
+    <h3>🔓 你现在可以用的全部工具</h3>
+    <div class="row"><span class="check">✓</span> AI 智能体搭建工具(输入行业+客户→生成完整方案)</div>
+    <div class="row"><span class="check">✓</span> AI 数字人代运营工具(输入产品→生成脚本+定价)</div>
+    <div class="row"><span class="check">✓</span> AI 公众号代写工具(输入主题→生成标题+大纲)</div>
+    <div class="row"><span class="check">✓</span> AI 简历优化工具(粘贴简历→评分+改写)</div>
+    <div class="row"><span class="check">✓</span> AI 提示词销售工具(输入用途→生成可销售包)</div>
+    <div class="row"><span class="check">✓</span> 接单话术 + 朋友圈文案(10 套模板)</div>
+    <div class="row"><span class="check">✓</span> 5 套定价指南 + 合同模板</div>
+    <div class="row"><span class="check">✓</span> 3 步跑通 1 单教程(5 分钟看会)</div>
+    <div class="row"><span class="check">✓</span> 7 天无理由退款(订单号已绑定)</div>
+  </div>
+
+  <a href="https://lwy907919-a11y.github.io/ai-money-kit-members/?orderId=GUEST" class="cta">
+    🚀 立即进 Members Area 开始 →
   </a>
+  <p class="tip">8 秒后自动跳转 · 不需要等任何人</p>
 
-  <div class="alert">
-    ⏱️ <strong>Auto-redirect in <span id="countdown">5</span> seconds</strong><br>
-    Or click the button above to go there immediately.
+  <div class="support">
+    <strong>💬 30 天答疑</strong> · 加微信 <strong style="color:#ee0979">hzylw123</strong> · 看到必回<br>
+    <small style="color:#666">遇到问题随时问。90% 问题看上面 FAQ 已解决,别憋着。</small>
   </div>
 
-  <div class="divider"></div>
-
-  <h3 style="font-size: 1.1rem; margin-bottom: 12px;">📧 Didn't get access yet?</h3>
-  <p class="help">
-    Email us at <a href="mailto:hzylw@gmail.com">hzylw@gmail.com</a><br>
-    Or DM on WeChat: <strong>hzylw123</strong><br>
-    (Send your PayPal receipt as proof)
-  </p>
-
-  <div class="divider"></div>
-
-  <p style="color:#999; font-size:0.85rem;">
-    🛒 <a href="https://lwy907919-a11y.github.io/buy/">Back to pricing</a> · 
-    💰 <a href="https://lwy907919-a11y.github.io/ai-money-kit/">Back to AI Money Kit</a> · 
-    🇨🇳 <a href="https://lwy907919-a11y.github.io/ai-money-kit-cn/">中文版</a>
-  </p>
+  <div class="refund-note">
+    💰 <strong>7 天无理由退款</strong> · 跑不通 1 单全额退 · 不问原因
+  </div>
 </div>
-
-<script>
-let s = 5;
-setInterval(() => { s--; if (s <= 0) s = 0; document.getElementById('countdown').textContent = s; }, 1000);
-</script>
-
-</html>
-
-
-</html>
-<footer style="background:#1a1a1a; color:white; padding:50px 20px; margin-top:60px;">
-<div style="max-width:1100px; margin:0 auto;">
-<h3 style="text-align:center; margin-bottom:30px; font-size:1.4rem;">🚀 All AI Money Kit Products</h3>
-<div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:20px; margin-bottom:30px;">
-<a href="https://lwy907919-a11y.github.io/hirepilot/" style="background:#2a2a2a; color:white; padding:16px; border-radius:8px; text-decoration:none; display:block;">
-<strong>🎯 HirePilot</strong>
-<p style="font-size:0.85rem; opacity:0.8; margin-top:6px;">8-step AI interview + ATS score. $9-99.</p>
-</a>
-<a href="https://lwy907919-a11y.github.io/hirepilot-freescore/" style="background:#2a2a2a; color:white; padding:16px; border-radius:8px; text-decoration:none; display:block;">
-<strong>📊 HirePilot FreeScore</strong>
-<p style="font-size:0.85rem; opacity:0.8; margin-top:6px;">Free 30-sec resume score. No signup.</p>
-</a>
-<a href="https://lwy907919-a11y.github.io/ai-money-kit/" style="background:#2a2a2a; color:white; padding:16px; border-radius:8px; text-decoration:none; display:block;">
-<strong>💰 AI Money Kit</strong>
-<p style="font-size:0.85rem; opacity:0.8; margin-top:6px;">5 turnkey AI business systems. $49-499.</p>
-</a>
-<a href="https://lwy907919-a11y.github.io/ai-money-kit-free/" style="background:#2a2a2a; color:white; padding:16px; border-radius:8px; text-decoration:none; display:block;">
-<strong>🆓 AIMK Free Tool</strong>
-<p style="font-size:0.85rem; opacity:0.8; margin-top:6px;">Try 1 of 5 systems. Free, no signup.</p>
-</a>
-<a href="https://lwy907919-a11y.github.io/ai-money-kit-members/" style="background:#2a2a2a; color:white; padding:16px; border-radius:8px; text-decoration:none; display:block;">
-<strong>🔒 AIMK Members</strong>
-<p style="font-size:0.85rem; opacity:0.8; margin-top:6px;">5 systems FULL + white-label rights.</p>
-</a>
-<a href="https://lwy907919-a11y.github.io/buy/" style="background:#f5576c; color:white; padding:16px; border-radius:8px; text-decoration:none; display:block; border:2px solid #f5576c;">
-<strong>🛒 Buy (4 Tiers)</strong>
-<p style="font-size:0.85rem; opacity:0.9; margin-top:6px;">$9-199 one-time. No subscription.</p>
-</a>
-<a href="https://lwy907919-a11y.github.io/compare-resume-tools/" style="background:#2a2a2a; color:white; padding:16px; border-radius:8px; text-decoration:none; display:block;">
-<strong>⚖️ HirePilot vs Others</strong>
-<p style="font-size:0.85rem; opacity:0.8; margin-top:6px;">Honest 2026 comparison.</p>
-</a>
-<a href="https://lwy907919-a11y.github.io/compare-ai-tools/" style="background:#2a2a2a; color:white; padding:16px; border-radius:8px; text-decoration:none; display:block;">
-<strong>⚖️ AIMK vs Jasper</strong>
-<p style="font-size:0.85rem; opacity:0.8; margin-top:6px;">AIMK vs Jasper vs Copy.ai vs Notion.</p>
-</a>
-<a href="https://lwy907919-a11y.github.io/ai-money-kit-cn/" style="background:#ee0979; color:white; padding:16px; border-radius:8px; text-decoration:none; display:block; border:2px solid #ee0979;">
-<strong>🇨🇳 中国版 (AI 赚钱工具包)</strong>
-<p style="font-size:0.85rem; opacity:0.9; margin-top:6px;">中文版,支付宝/微信,¥29-199</p>
-</a>
-<a href="https://lwy907919-a11y.github.io/ai-money-kit-cn-free/" style="background:#fff5f8; color:#ee0979; padding:16px; border-radius:8px; text-decoration:none; display:block; border:2px solid #ee0979;">
-<strong>🆓 中文免费工具</strong>
-<p style="font-size:0.85rem; opacity:0.9; margin-top:6px;">5 系统提示词,免费生成</p>
-</a>
-<a href="https://lwy907919-a11y.github.io/thanks/" style="background:#10b981; color:white; padding:16px; border-radius:8px; text-decoration:none; display:block; border:2px solid #10b981;">
-<strong>✅ 付款成功页</strong>
-<p style="font-size:0.85rem; opacity:0.9; margin-top:6px;">付款后自动跳转</p>
-</a>
-<a href="https://lwy907919-a11y.github.io/refund/" style="background:#2a2a2a; color:white; padding:16px; border-radius:8px; text-decoration:none; display:block;">
-<strong>💰 退款政策</strong>
-<p style="font-size:0.85rem; opacity:0.8; margin-top:6px;">30 天无理由</p>
-</a>
-<a href="https://lwy907919-a11y.github.io/terms/" style="background:#2a2a2a; color:white; padding:16px; border-radius:8px; text-decoration:none; display:block;">
-<strong>📜 服务条款</strong>
-<p style="font-size:0.85rem; opacity:0.8; margin-top:6px;">使用前必读</p>
-</a>
-<a href="https://lwy907919-a11y.github.io/refund-cn/" style="background:#2a2a2a; color:#ee0979; padding:16px; border-radius:8px; text-decoration:none; display:block; border:1px solid #ee0979;">
-<strong>🇨🇳 退款政策(中文)</strong>
-<p style="font-size:0.85rem; opacity:0.8; margin-top:6px;">7 天无理由</p>
-</a>
-</div>
-<div style="text-align:center; opacity:0.7; font-size:0.9rem; padding-top:20px; border-top:1px solid #444;">
-<p>© 2026 AI Money Kit by Hzylw. All products one-time payment, no subscription.</p>
-<p>Questions? <a href="mailto:hzylw@gmail.com" style="color:#f5576c;">hzylw@gmail.com</a></p>
-</div>
-</div>
-</footer>
 </body>
 </html>
